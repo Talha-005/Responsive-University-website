@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>head}}
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 650px)" href="CSS/phone.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <section class="sub-header">
+        {{>nav}}
+    </section>
+
+    <!-- Contact us -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435519.9876170756!2d74.33438929999998!3d31.482940349999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1629039310522!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>54700 main Lahore</h5>
+                        <p>Punjab, Pakistan</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+92099983838</h5>
+                        <p>Monday to Friday, 10AM to 5PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@gmail.com</h5>
+                        <p>Email is your query</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+                <form action="/contact" method="POST">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your Email" required><input type="text"
+                        placeholder="Enter your subject" name="subject" required>
+                    <textarea placeholder="Message" name="message" cols="30" rows="9" required></textarea>
+                    <button type="submit" class="hero-btn red-btn" value="/contact">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+    {{>footer}}
+
+    <!-- Script -->
+    {{>script}}
+
+</body>
+
+</html>

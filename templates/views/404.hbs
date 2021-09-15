@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>head}}
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 650px)" href="CSS/phone.css">
+</head>
+
+<style>
+    .cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    div p{
+        font-size: 3rem;
+    }
+</style>
+
+<body>
+
+    <!-- Header -->
+    <section class="sub-header">
+        {{>nav}}
+    </section>
+
+    <!-- 404 CONTENT -->
+    <section>
+        <div class="cont">
+        <p> {{errorComment}}</p>
+    </div>
+    </section>
+
+    <!-- Footer  -->
+    {{>footer}}
+
+    <!-- Script -->
+    {{>script}}
+
+</body>
+
+</html>
