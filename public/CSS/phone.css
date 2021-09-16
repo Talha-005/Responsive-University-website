@@ -50,3 +50,7 @@ nav .fa{
 .sub-header h1{
     font-size: 24px;
 }
+
+.wrapper form input{
+    width: 68% ;
+}

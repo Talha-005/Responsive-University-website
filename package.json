@@ -1,17 +1,31 @@
 {
-  "name": "project-website",
+  "name": "edu-uni",
   "version": "1.0.0",
-  "description": "",
+  "description": "practice project",
   "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "config": "^3.3.6",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "fawn": "^2.1.5",
+    "handlebars": "^4.5.3",
+    "hbs": "^4.1.2",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.7",
+    "nodemon": "^2.0.12",
+    "winston": "^2.4.5",
+    "winston-mongodb": "^3.0.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.js -e js,hbs"
+    "start": "node index.js -e hbs,js"
   },
-  "author": "Talha",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "hbs": "^4.1.2",
-    "nodemon": "^2.0.12"
-  }
+  "author": "Muhammad Talha Sohail",
+  "license": "ISC"
 }

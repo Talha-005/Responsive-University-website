@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 650px)" href="CSS/phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0% 6%;
+            background-color: rgb(87, 82, 82);
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links ul li a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    </style>
+    {{>head}}
+</head>
+
+<body>
+
+    <!-- Header -->
+    <section>
+        <nav>
+            <a href="/"><img src="/images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/login">LOGIN</a></li>
+                    <li><a href="/signup">SIGNUP</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    </section>
+
+    <section class="logSign">
+        <div class="wrapper">
+            <header>Signup</header>
+
+            <form action="/signup" method="POST">
+                <div class="field">
+                    <div class="input-area">
+                        <input type="text" name="firstName" placeholder="First Name" required>
+                        <i class="icon fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="input-area">
+                        <input type="text" name="lastName" placeholder="Last Name" required>
+                        <i class="icon fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="input-area">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <i class="icon fas fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="input-area">
+                        <input type="password" name="password" placeholder="Password" required>
+                        <i class="icon fas fa-lock"></i>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="input-area">
+                        <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+                        <i class="icon fas fa-lock"></i>
+                    </div>
+                </div>
+                <div class="pass-txt">
+                    <p>{{emailValidate}}</p>
+                    <p>{{passCheck}}</p>
+                </div>
+                <button type="submit" value="signup" class="hero1-btn red-btn">Signup</button>
+            </form>
+            <div class="sign-txt">Already have account? <a href="/login">Login now</a></div required>
+        </div>
+
+    </section>
+    <!-- Footer  -->
+    {{>footer}}
+
+    <!-- Script -->
+    {{>script}}
+
+</body>
+
+</html>

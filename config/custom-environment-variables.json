@@ -1,0 +1,4 @@
+{
+    "jwtPrivateKey":"UniUsers_jwtPrivateKey",
+    "db":"UniUsersData"
+}

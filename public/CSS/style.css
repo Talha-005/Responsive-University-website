@@ -23,7 +23,7 @@ nav img{
 }
 .nav-links{
     flex: 1;
-    text-align: right;
+    text-align: right; 
 }
 .nav-links ul li{
     list-style: none;
@@ -421,3 +421,159 @@ background: #f0f0f0;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
+/* //login + signup */
+.logSign{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+ .wrapper{
+    width: 380px;
+    padding: 40px 30px 50px 30px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+  }
+  .wrapper header{
+    font-size: 35px;
+    font-weight: 600;
+  }
+   .wrapper form{
+    margin: 40px 0;
+  }
+   .wrapper form .field{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+   .wrapper form .field.shake{
+    animation: shake 0.3s ease-in-out;
+  }
+  @keyframes shake {
+    0%, 100%{
+      margin-left: 0px;
+    }
+    20%, 80%{
+      margin-left: -12px;
+    }
+    40%, 60%{
+      margin-left: 12px;
+    }
+  }
+   .wrapper form .field .input-area{
+    height: 50px;
+    width: 100%;
+    position: relative;
+  }
+   .wrapper form input, .wrapper form button{
+    width: 75%;
+    height: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    background: none;
+    caret-color: #f44336;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+  }
+  .wrapper form button{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    background: none;
+    caret-color: #f44336;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+  }
+    .wrapper form .field input:focus,
+   .wrapper form .field.valid input{
+    border-color: #f44336;
+  }
+  .wrapper form .field.shake input,
+  .wrapper form .field.error input{
+    border-color: #ca646e;
+  }
+  .wrapper .field .input-area i{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  .wrapper .input-area .icon{
+    left: 15px;
+    color: #bfbfbf;
+    transition: color 0.2s ease;
+  }
+  .wrapper .input-area .error-icon{
+    right: 15px;
+    color: #dc3545;
+  }
+  .wrapper form input:focus ~ .icon,
+  .wrapper form .field.valid .icon{
+    color: #f44336;
+  }
+  .wrapper form .field.shake input:focus ~ .icon,
+  .wrapper form .field.error input:focus ~ .icon{
+    color: #bfbfbf;
+  }
+  .wrapper form input::placeholder{
+    color: #bfbfbf;
+    font-size: 17px;
+  }
+  .wrapper form .field .error-txt{
+    color: #dc3545;
+    text-align: left;
+    margin-top: 5px;
+  }
+  .wrapper .form .field .error{
+    display: none;
+  }
+  .wrapper form .field.shake .error,
+  .wrapper form .field.error .error{
+    display: block;
+  }
+  .wrapper form .pass-txt p{
+    text-align: left;
+    font-size: 1.1rem;
+    margin-top: -10px;
+    color: #ce392f;
+  }
+  .wrapper a{
+    color: #f44336;
+    text-decoration: none;
+  }
+  .wrapper a:hover{
+    text-decoration: underline;
+  }
+  .wrapper .hero1-btn{
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 12px 34px;
+      font-size: 13px;
+      background: #f44336;
+      position: relative;
+      cursor: pointer;
+      height: 50px;
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  .wrapper .hero1-btn:hover{
+      border: 1px solid #f44336;
+      color: #f44336;
+      background: #fff;
+      transition: .6s;
+  }
